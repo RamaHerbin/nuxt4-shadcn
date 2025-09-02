@@ -124,8 +124,7 @@ A comprehensive showcase of InspiraUI components built with Nuxt 4, Vue 3, TypeS
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd nuxt4-shadcn
+cd <project-name>
 ```
 
 2. Install dependencies:
