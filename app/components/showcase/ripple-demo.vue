@@ -1,11 +1,11 @@
 <template>
   <div class="w-full flex justify-center gap-4">
-    <RippleButton class="bg-blue-500 text-white px-6 py-3 rounded-lg">
-      Effet Ripple
-    </RippleButton>
-    <RippleButton class="bg-green-500 text-white px-6 py-3 rounded-lg">
-      Cliquez-moi
-    </RippleButton>
+          <RippleButton class="bg-blue-500 text-white px-6 py-3 rounded-lg">
+        Ripple Effect
+      </RippleButton>
+      <RippleButton class="bg-green-500 text-white px-6 py-3 rounded-lg">
+        Click me
+      </RippleButton>
   </div>
 </template>
 

@@ -2,28 +2,21 @@
   <div class="w-full space-y-6">
     <div class="text-center">
       <TextGenerateEffect 
-        words="Inspira UI Showcase"
+        words="Inspira UI"
         class="text-2xl font-bold"
       />
     </div>
     
     <div class="text-center">
       <FlipWords 
-        :words="['Creative', 'Modern', 'Elegant', 'Functional']"
-        class="text-xl"
-      />
-    </div>
-    
-    <div class="text-center">
-      <MorphingText 
-        :texts="['Animation', 'Transition', 'Transformation']"
+        :words="['Créatif', 'Moderne', 'Élégant', 'Fonctionnel']"
         class="text-lg"
       />
     </div>
     
     <div class="text-center">
       <SparklesText 
-        text="Sparkles Effect"
+        text="Effet Sparkles"
         class="text-xl font-semibold"
       />
     </div>
@@ -33,6 +26,5 @@
 <script setup lang="ts">
 import { TextGenerateEffect } from '~/components/ui/text-generate-effect'
 import { FlipWords } from '~/components/ui/flip-words'
-import { MorphingText } from '~/components/ui/morphing-text'
 import { SparklesText } from '~/components/ui/sparkles-text'
 </script>
