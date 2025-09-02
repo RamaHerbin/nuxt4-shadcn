@@ -34,11 +34,11 @@
       </header>
     
       <main class="max-w-7xl mx-auto px-4 py-8">
-        <p class="text-sm text-muted-foreground mb-6">Démonstrations des composants InspiraUI disponibles dans le projet.</p>
+        <p class="text-sm text-muted-foreground mb-6">Demonstrations of InspiraUI components available in the project.</p>
     
-        <!-- Composants de base -->
+        <!-- Basic Components -->
         <section class="mb-12">
-          <h2 class="text-xl font-semibold mb-6">Composants de base</h2>
+          <h2 class="text-xl font-semibold mb-6">Basic Components</h2>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <div class="rounded-2xl border shadow-sm overflow-hidden">
               <header class="px-4 py-3 border-b">
@@ -53,15 +53,15 @@
                 <h3 class="font-medium">Input</h3>
               </header>
               <div class="p-4 bg-card">
-                <Input placeholder="Type here…" />
+                <IInput placeholder="Type here…" />
               </div>
             </div>
           </div>
         </section>
 
-        <!-- Composants d'animation -->
+        <!-- Animation Components -->
         <section class="mb-12">
-          <h2 class="text-xl font-semibold mb-6">Composants d'animation</h2>
+          <h2 class="text-xl font-semibold mb-6">Animation Components</h2>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <div class="rounded-2xl border shadow-sm overflow-hidden">
               <header class="px-4 py-3 border-b">
@@ -82,9 +82,9 @@
           </div>
         </section>
 
-        <!-- Composants de layout -->
+        <!-- Layout Components -->
         <section class="mb-12">
-          <h2 class="text-xl font-semibold mb-6">Composants de layout</h2>
+          <h2 class="text-xl font-semibold mb-6">Layout Components</h2>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <div class="rounded-2xl border shadow-sm overflow-hidden">
               <header class="px-4 py-3 border-b">
@@ -121,9 +121,9 @@
           </div>
         </section>
 
-        <!-- Composants interactifs -->
+        <!-- Interactive Components -->
         <section class="mb-12">
-          <h2 class="text-xl font-semibold mb-6">Composants interactifs</h2>
+          <h2 class="text-xl font-semibold mb-6">Interactive Components</h2>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <div class="rounded-2xl border shadow-sm overflow-hidden">
               <header class="px-4 py-3 border-b">
@@ -144,9 +144,9 @@
           </div>
         </section>
 
-        <!-- Effets de texte -->
+        <!-- Text Effects -->
         <section class="mb-12">
-          <h2 class="text-xl font-semibold mb-6">Effets de texte</h2>
+          <h2 class="text-xl font-semibold mb-6">Text Effects</h2>
           <div class="grid grid-cols-1 gap-6">
             <div class="rounded-2xl border shadow-sm overflow-hidden">
               <header class="px-4 py-3 border-b">
@@ -159,9 +159,9 @@
           </div>
         </section>
 
-        <!-- Effets d'arrière-plan -->
+        <!-- Background Effects -->
         <section class="mb-12">
-          <h2 class="text-xl font-semibold mb-6">Effets d'arrière-plan</h2>
+          <h2 class="text-xl font-semibold mb-6">Background Effects</h2>
           <div class="grid grid-cols-1 gap-6">
             <div class="rounded-2xl border shadow-sm overflow-hidden">
               <header class="px-4 py-3 border-b">
@@ -174,9 +174,9 @@
           </div>
         </section>
 
-        <!-- Effets de cartes -->
+        <!-- Card Effects -->
         <section class="mb-12">
-          <h2 class="text-xl font-semibold mb-6">Effets de cartes</h2>
+          <h2 class="text-xl font-semibold mb-6">Card Effects</h2>
           <div class="grid grid-cols-1 gap-6">
             <div class="rounded-2xl border shadow-sm overflow-hidden">
               <header class="px-4 py-3 border-b">
@@ -184,6 +184,81 @@
               </header>
               <div class="p-4 bg-card">
                 <component :is="CardEffectsDemo" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Text Animations -->
+        <section class="mb-12">
+          <h2 class="text-xl font-semibold mb-6">Text Animations</h2>
+          <div class="grid grid-cols-1 gap-6">
+            <div class="rounded-2xl border shadow-sm overflow-hidden">
+              <header class="px-4 py-3 border-b">
+                <h3 class="font-medium">Text Animations</h3>
+              </header>
+              <div class="p-4 bg-card">
+                <component :is="TextAnimationsDemo" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Button Variants -->
+        <section class="mb-12">
+          <h2 class="text-xl font-semibold mb-6">Button Variants</h2>
+          <div class="grid grid-cols-1 gap-6">
+            <div class="rounded-2xl border shadow-sm overflow-hidden">
+              <header class="px-4 py-3 border-b">
+                <h3 class="font-medium">Button Variants</h3>
+              </header>
+              <div class="p-4 bg-card">
+                <component :is="ButtonVariantsDemo" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Input Components -->
+        <section class="mb-12">
+          <h2 class="text-xl font-semibold mb-6">Input Components</h2>
+          <div class="grid grid-cols-1 gap-6">
+            <div class="rounded-2xl border shadow-sm overflow-hidden">
+              <header class="px-4 py-3 border-b">
+                <h3 class="font-medium">Input Components</h3>
+              </header>
+              <div class="p-4 bg-card">
+                <component :is="InputComponentsDemo" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Loading Animations -->
+        <section class="mb-12">
+          <h2 class="text-xl font-semibold mb-6">Loading Animations</h2>
+          <div class="grid grid-cols-1 gap-6">
+            <div class="rounded-2xl border shadow-sm overflow-hidden">
+              <header class="px-4 py-3 border-b">
+                <h3 class="font-medium">Loading Animations</h3>
+              </header>
+              <div class="p-4 bg-card">
+                <component :is="LoadingAnimationsDemo" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3D Effects -->
+        <section class="mb-12">
+          <h2 class="text-xl font-semibold mb-6">3D Effects</h2>
+          <div class="grid grid-cols-1 gap-6">
+            <div class="rounded-2xl border shadow-sm overflow-hidden">
+              <header class="px-4 py-3 border-b">
+                <h3 class="font-medium">3D Effects</h3>
+              </header>
+              <div class="p-4 bg-card">
+                <component :is="Effects3DDemo" />
               </div>
             </div>
           </div>
@@ -206,6 +281,12 @@ import RippleDemo from '~/components/showcase/ripple-demo.vue'
 import TextEffectsDemo from '~/components/showcase/text-effects-demo.vue'
 import BackgroundEffectsDemo from '~/components/showcase/background-effects-demo.vue'
 import CardEffectsDemo from '~/components/showcase/card-effects-demo.vue'
+import TextAnimationsDemo from '~/components/showcase/text-animations-demo.vue'
+import ButtonVariantsDemo from '~/components/showcase/button-variants-demo.vue'
+import InputComponentsDemo from '~/components/showcase/input-components-demo.vue'
+import LoadingAnimationsDemo from '~/components/showcase/loading-animations-demo.vue'
+import Effects3DDemo from '~/components/showcase/3d-effects-demo.vue'
+import { IInput } from '~/components/ui/input'
 
 const query = ref('')
 const isDark = ref(false)

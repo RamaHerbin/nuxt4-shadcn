@@ -9,7 +9,7 @@
     
     <div class="text-center">
       <FlipWords 
-        :words="['Créatif', 'Moderne', 'Élégant', 'Fonctionnel']"
+        :words="['Creative', 'Modern', 'Elegant', 'Functional']"
         class="text-xl"
       />
     </div>
@@ -23,7 +23,7 @@
     
     <div class="text-center">
       <SparklesText 
-        text="Effet Sparkles"
+        text="Sparkles Effect"
         class="text-xl font-semibold"
       />
     </div>

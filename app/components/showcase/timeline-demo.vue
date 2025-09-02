@@ -2,8 +2,8 @@
   <div class="w-full max-w-md">
     <div class="space-y-6">
       <div class="text-center mb-6">
-        <h3 class="text-lg font-semibold">Timeline des étapes</h3>
-        <p class="text-sm text-muted-foreground">Suivi du projet étape par étape</p>
+        <h3 class="text-lg font-semibold">Project Timeline</h3>
+        <p class="text-sm text-muted-foreground">Step-by-step project tracking</p>
       </div>
       
       <div class="relative">
@@ -17,8 +17,8 @@
           </div>
           <div class="flex-1 min-w-0">
             <div class="rounded-lg border bg-card p-4 shadow-sm">
-              <h4 class="font-semibold text-blue-600">Projet lancé</h4>
-              <p class="text-sm text-muted-foreground">Le projet a été initialisé avec succès</p>
+              <h4 class="font-semibold text-blue-600">Project Launched</h4>
+              <p class="text-sm text-muted-foreground">Project has been successfully initialized</p>
             </div>
           </div>
         </div>
@@ -30,8 +30,8 @@
           </div>
           <div class="flex-1 min-w-0">
             <div class="rounded-lg border bg-card p-4 shadow-sm">
-              <h4 class="font-semibold text-green-600">Développement</h4>
-              <p class="text-sm text-muted-foreground">Phase de développement en cours</p>
+              <h4 class="font-semibold text-green-600">Development</h4>
+              <p class="text-sm text-muted-foreground">Development phase in progress</p>
             </div>
           </div>
         </div>
@@ -43,8 +43,8 @@
           </div>
           <div class="flex-1 min-w-0">
             <div class="rounded-lg border bg-card p-4 shadow-sm">
-              <h4 class="font-semibold text-yellow-600">Tests</h4>
-              <p class="text-sm text-muted-foreground">Phase de tests et validation</p>
+              <h4 class="font-semibold text-yellow-600">Testing</h4>
+              <p class="text-sm text-muted-foreground">Testing and validation phase</p>
             </div>
           </div>
         </div>
