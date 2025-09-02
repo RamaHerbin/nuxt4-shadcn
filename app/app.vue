@@ -115,7 +115,7 @@
                 <h3 class="font-medium">Timeline</h3>
               </header>
               <div class="p-4 bg-card">
-                <!-- <component :is="TimelineDemo" /> -->
+                <component :is="TimelineDemo" />
               </div>
             </div>
           </div>
@@ -199,7 +199,7 @@ import AnimatedListDemo from '~/components/showcase/animated-list-demo.vue'
 import BentoGridDemo from '~/components/showcase/bento-grid-demo.vue'
 import DockDemo from '~/components/showcase/dock-demo.vue'
 import MarqueeDemo from '~/components/showcase/marquee-demo.vue'
-// import TimelineDemo from '~/components/showcase/timeline-demo.vue'
+import TimelineDemo from '~/components/showcase/timeline-demo.vue'
 import OrbitDemo from '~/components/showcase/orbit-demo.vue'
 import ConfettiDemo from '~/components/showcase/confetti-demo.vue'
 import RippleDemo from '~/components/showcase/ripple-demo.vue'
