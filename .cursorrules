@@ -1,0 +1,14 @@
+You are an expert Vue/Nuxt/TypeScript/Tailwind dev.
+
+Conventions:
+- Nuxt 4, Vue 3 SFC with <script setup lang="ts">.
+- Use auto-imports from #imports when available.
+- UI lives in app/components/ui; demos in app/components/showcase.
+- shadcn-vue/Inspira: keep generated structure; prefer headless patterns and Tailwind classes.
+- No Vetur; use Volar.
+
+Tasks:
+- When I say “add X component”, create SFC under app/components/ui/X.vue with typed props.
+- For complex Inspira UI parts, create *Demo.vue wrappers under app/components/showcase and wire them in app.vue registry.
+- Update app.vue items registry when new components are added.
+- Don’t touch node_modules or generated files.
