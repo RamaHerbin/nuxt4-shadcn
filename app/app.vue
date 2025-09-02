@@ -287,6 +287,7 @@ import InputComponentsDemo from '~/components/showcase/input-components-demo.vue
 import LoadingAnimationsDemo from '~/components/showcase/loading-animations-demo.vue'
 import Effects3DDemo from '~/components/showcase/3d-effects-demo.vue'
 import { IInput } from '~/components/ui/input'
+import { Button } from '~/components/ui/button'
 
 const query = ref('')
 const isDark = ref(false)
