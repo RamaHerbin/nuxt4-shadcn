@@ -18,26 +18,26 @@ import { AnimatedList, Notification } from '~/components/ui/animated-list'
 const notifications = [
   {
     id: 1,
-    title: 'Nouveau message',
-    message: 'Vous avez reçu un nouveau message',
+    title: 'New message',
+    message: 'You have received a new message',
     type: 'info'
   },
   {
     id: 2,
-    title: 'Mise à jour',
-    message: 'Votre profil a été mis à jour',
+    title: 'Update',
+    message: 'Your profile has been updated',
     type: 'success'
   },
   {
     id: 3,
-    title: 'Rappel',
-    message: 'N\'oubliez pas votre rendez-vous',
+    title: 'Reminder',
+    message: 'Don\'t forget your appointment',
     type: 'warning'
   },
   {
     id: 4,
-    title: 'Erreur',
-    message: 'Une erreur s\'est produite',
+    title: 'Error',
+    message: 'An error has occurred',
     type: 'error'
   }
 ]

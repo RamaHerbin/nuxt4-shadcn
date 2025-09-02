@@ -2,7 +2,7 @@
   <div class="w-full flex justify-center">
     <Confetti>
       <ConfettiButton>
-        🎉 Cliquez pour la fête !
+        🎉 Click for celebration!
       </ConfettiButton>
     </Confetti>
   </div>

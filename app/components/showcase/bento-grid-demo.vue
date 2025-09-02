@@ -21,15 +21,15 @@ const items = [
   {
     id: 1,
     title: 'Dashboard',
-    description: 'Vue d\'ensemble de vos données',
+    description: 'Overview of your data',
     header: '📊',
     icon: 'ChartBarIcon',
     class: 'md:col-span-2'
   },
   {
     id: 2,
-    title: 'Utilisateurs',
-    description: 'Gestion des utilisateurs',
+    title: 'Users',
+    description: 'User management',
     header: '👥',
     icon: 'UsersIcon',
     class: 'md:col-span-1'
@@ -37,15 +37,15 @@ const items = [
   {
     id: 3,
     title: 'Analytics',
-    description: 'Statistiques détaillées',
+    description: 'Detailed statistics',
     header: '📈',
     icon: 'ChartPieIcon',
     class: 'md:col-span-1'
   },
   {
     id: 4,
-    title: 'Paramètres',
-    description: 'Configuration de l\'application',
+    title: 'Settings',
+    description: 'Application configuration',
     header: '⚙️',
     icon: 'CogIcon',
     class: 'md:col-span-2'
