@@ -134,27 +134,157 @@
   }
   
   /**
-   * Minimal demo content. Replace/extend according to what you installed from Inspira UI.
-   * Tip: if a component requires complex props/slots, add a small wrapper in ~/components/showcase/* and import it via `importPath`.
+   * Complete showcase of all Inspira UI components available in the project.
+   * Components with complex props/slots use dedicated demo wrappers in ~/components/showcase/*.
    */
   const items = ref<ShowcaseItem[]>([
+    // Basic Components
     { name: 'Button', docs: 'https://inspira-ui.com/docs/components/button', props: { variant: 'primary' }, slots: { default: 'Click me' } },
-    { name: 'Card', docs: 'https://inspira-ui.com/docs/components/card', slots: { default: '<div class="p-4">Card content</div>' } },
-    { name: 'Badge', docs: 'https://inspira-ui.com/docs/components/badge', slots: { default: 'Badge' } },
     { name: 'Input', docs: 'https://inspira-ui.com/docs/components/input', props: { placeholder: 'Type here…' } },
-    { name: 'Textarea', docs: 'https://inspira-ui.com/docs/components/textarea', props: { rows: 3, placeholder: 'Your message…' } },
-    { name: 'Checkbox', docs: 'https://inspira-ui.com/docs/components/checkbox', props: { modelValue: true } },
-    { name: 'Switch', docs: 'https://inspira-ui.com/docs/components/switch', props: { modelValue: true } },
-    { name: 'Progress', docs: 'https://inspira-ui.com/docs/components/progress', props: { value: 42 } },
-    { name: 'Tooltip', docs: 'https://inspira-ui.com/docs/components/tooltip', slots: { default: 'Hover me' } },
-    { name: 'Accordion', docs: 'https://inspira-ui.com/docs/components/accordion', importPath: '~/components/showcase/accordion-demo.vue' },
-    { name: 'Tabs', docs: 'https://inspira-ui.com/docs/components/tabs', importPath: '~/components/showcase/tabs-demo.vue' },
-    { name: 'Dialog', docs: 'https://inspira-ui.com/docs/components/dialog', importPath: '~/components/showcase/dialog-demo.vue' },
-    { name: 'Dropdown Menu', docs: 'https://inspira-ui.com/docs/components/dropdown-menu', importPath: '~/components/showcase/dropdown-demo.vue' },
-    { name: 'Timeline', docs: 'https://inspira-ui.com/docs/components/timeline' },
-    { name: 'Marquee', docs: 'https://inspira-ui.com/docs/components/marquee', props: { speed: 50 }, slots: { default: '🟣 🟢 🔵 🟡' } },
-    { name: 'Interactive Grid Pattern', docs: 'https://inspira-ui.com/docs/components/interactive-grid-pattern', importPath: '~/components/showcase/interactive-grid-demo.vue' },
+    
+    // Animation Components
+    { name: 'Animated List', docs: 'https://inspira-ui.com/docs/components/animated-list', importPath: '~/components/showcase/animated-list-demo.vue' },
+    { name: 'Animated Beam', docs: 'https://inspira-ui.com/docs/components/animated-beam' },
+    { name: 'Animated Circular Progress Bar', docs: 'https://inspira-ui.com/docs/components/animated-circular-progressbar' },
+    { name: 'Animated Testimonials', docs: 'https://inspira-ui.com/docs/components/animated-testimonials' },
+    { name: 'Animated Tooltip', docs: 'https://inspira-ui.com/docs/components/animated-tooltip' },
+    
+    // Layout Components
+    { name: 'Bento Grid', docs: 'https://inspira-ui.com/docs/components/bento-grid', importPath: '~/components/showcase/bento-grid-demo.vue' },
+    { name: 'Dock', docs: 'https://inspira-ui.com/docs/components/dock', importPath: '~/components/showcase/dock-demo.vue' },
+    { name: 'Marquee', docs: 'https://inspira-ui.com/docs/components/marquee', importPath: '~/components/showcase/marquee-demo.vue' },
+    { name: 'Timeline', docs: 'https://inspira-ui.com/docs/components/timeline', importPath: '~/components/showcase/timeline-demo.vue' },
     { name: 'Orbit', docs: 'https://inspira-ui.com/docs/components/orbit', importPath: '~/components/showcase/orbit-demo.vue' },
+    
+    // Interactive Components
+    { name: 'Confetti', docs: 'https://inspira-ui.com/docs/components/confetti', importPath: '~/components/showcase/confetti-demo.vue' },
+    { name: 'Ripple Button', docs: 'https://inspira-ui.com/docs/components/ripple-button', importPath: '~/components/showcase/ripple-demo.vue' },
+    { name: 'Interactive Grid Pattern', docs: 'https://inspira-ui.com/docs/components/interactive-grid-pattern' },
+    { name: 'Interactive Hover Button', docs: 'https://inspira-ui.com/docs/components/interactive-hover-button' },
+    
+    // Text Effects
+    { name: 'Text Effects', docs: 'https://inspira-ui.com/docs/components/text-effects', importPath: '~/components/showcase/text-effects-demo.vue' },
+    { name: 'Flip Words', docs: 'https://inspira-ui.com/docs/components/flip-words' },
+    { name: 'Morphing Text', docs: 'https://inspira-ui.com/docs/components/morphing-text' },
+    { name: 'Sparkles Text', docs: 'https://inspira-ui.com/docs/components/sparkles-text' },
+    { name: 'Text Generate Effect', docs: 'https://inspira-ui.com/docs/components/text-generate-effect' },
+    { name: 'Text Reveal', docs: 'https://inspira-ui.com/docs/components/text-reveal' },
+    { name: 'Text Scroll Reveal', docs: 'https://inspira-ui.com/docs/components/text-scroll-reveal' },
+    { name: 'Text Reveal Card', docs: 'https://inspira-ui.com/docs/components/text-reveal-card' },
+    { name: 'Text Highlight', docs: 'https://inspira-ui.com/docs/components/text-highlight' },
+    { name: 'Text Hover Effect', docs: 'https://inspira-ui.com/docs/components/text-hover-effect' },
+    { name: 'Text 3D', docs: 'https://inspira-ui.com/docs/components/text-3d' },
+    { name: 'Hyper Text', docs: 'https://inspira-ui.com/docs/components/hyper-text' },
+    { name: 'Radiant Text', docs: 'https://inspira-ui.com/docs/components/radiant-text' },
+    { name: 'Colourful Text', docs: 'https://inspira-ui.com/docs/components/colourful-text' },
+    { name: 'Line Shadow Text', docs: 'https://inspira-ui.com/docs/components/line-shadow-text' },
+    { name: 'Letter Pullup', docs: 'https://inspira-ui.com/docs/components/letter-pullup' },
+    { name: 'Spinning Text', docs: 'https://inspira-ui.com/docs/components/spinning-text' },
+    
+    // Background Effects
+    { name: 'Background Effects', docs: 'https://inspira-ui.com/docs/components/background-effects', importPath: '~/components/showcase/background-effects-demo.vue' },
+    { name: 'Aurora Background', docs: 'https://inspira-ui.com/docs/components/aurora-background' },
+    { name: 'Black Hole Background', docs: 'https://inspira-ui.com/docs/components/bg-black-hole' },
+    { name: 'Falling Stars Background', docs: 'https://inspira-ui.com/docs/components/bg-falling-stars' },
+    { name: 'Particle Whirlpool Background', docs: 'https://inspira-ui.com/docs/components/bg-particle-whirlpool' },
+    { name: 'Liquid Background', docs: 'https://inspira-ui.com/docs/components/liquid-background' },
+    { name: 'Warp Background', docs: 'https://inspira-ui.com/docs/components/warp-background' },
+    { name: 'Wavy Background', docs: 'https://inspira-ui.com/docs/components/wavy-background' },
+    { name: 'Pattern Background', docs: 'https://inspira-ui.com/docs/components/pattern-background' },
+    { name: 'Particles Background', docs: 'https://inspira-ui.com/docs/components/particles-bg' },
+    { name: 'Snowfall Background', docs: 'https://inspira-ui.com/docs/components/snowfall-bg' },
+    { name: 'Flickering Grid', docs: 'https://inspira-ui.com/docs/components/flickering-grid' },
+    { name: 'Infinite Grid', docs: 'https://inspira-ui.com/docs/components/infinite-grid' },
+    
+    // Card Effects
+    { name: 'Card Effects', docs: 'https://inspira-ui.com/docs/components/card-effects', importPath: '~/components/showcase/card-effects-demo.vue' },
+    { name: 'Card Spotlight', docs: 'https://inspira-ui.com/docs/components/card-spotlight' },
+    { name: 'Glare Card', docs: 'https://inspira-ui.com/docs/components/glare-card' },
+    { name: 'Card 3D', docs: 'https://inspira-ui.com/docs/components/card-3d' },
+    { name: 'Flip Card', docs: 'https://inspira-ui.com/docs/components/flip-card' },
+    { name: 'Direction Aware Hover', docs: 'https://inspira-ui.com/docs/components/direction-aware-hover' },
+    { name: 'Glow Border', docs: 'https://inspira-ui.com/docs/components/glow-border' },
+    { name: 'Glowing Effect', docs: 'https://inspira-ui.com/docs/components/glowing-effect' },
+    { name: 'Neon Border', docs: 'https://inspira-ui.com/docs/components/neon-border' },
+    { name: 'Border Beam', docs: 'https://inspira-ui.com/docs/components/border-beam' },
+    { name: 'Box Reveal', docs: 'https://inspira-ui.com/docs/components/box-reveal' },
+    { name: 'Blur Reveal', docs: 'https://inspira-ui.com/docs/components/blur-reveal' },
+    
+    // Button Variants
+    { name: 'Gradient Button', docs: 'https://inspira-ui.com/docs/components/gradient-button' },
+    { name: 'Rainbow Button', docs: 'https://inspira-ui.com/docs/components/rainbow-button' },
+    { name: 'Shimmer Button', docs: 'https://inspira-ui.com/docs/components/shimmer-button' },
+    
+    // UI Components
+    { name: 'Balance Slider', docs: 'https://inspira-ui.com/docs/components/balance-slider' },
+    { name: 'Color Picker', docs: 'https://inspira-ui.com/docs/components/color-picker' },
+    { name: 'Compare', docs: 'https://inspira-ui.com/docs/components/compare' },
+    { name: 'File Upload', docs: 'https://inspira-ui.com/docs/components/file-upload' },
+    { name: 'File Tree', docs: 'https://inspira-ui.com/docs/components/file-tree' },
+    { name: 'Halo Search', docs: 'https://inspira-ui.com/docs/components/halo-search' },
+    { name: 'Vanishing Input', docs: 'https://inspira-ui.com/docs/components/vanishing-input' },
+    { name: 'Multi Step Loader', docs: 'https://inspira-ui.com/docs/components/multi-step-loader' },
+    { name: 'Number Ticker', docs: 'https://inspira-ui.com/docs/components/number-ticker' },
+    { name: 'Morphing Tabs', docs: 'https://inspira-ui.com/docs/components/morphing-tabs' },
+    { name: 'Spring Calendar', docs: 'https://inspira-ui.com/docs/components/spring-calendar' },
+    { name: 'Tetris', docs: 'https://inspira-ui.com/docs/components/tetris' },
+    
+    // Media Components
+    { name: 'Apple Card Carousel', docs: 'https://inspira-ui.com/docs/components/apple-card-carousel' },
+    { name: 'Bending Gallery', docs: 'https://inspira-ui.com/docs/components/bending-gallery' },
+    { name: 'Expandable Gallery', docs: 'https://inspira-ui.com/docs/components/expandable-gallery' },
+    { name: 'Images Slider', docs: 'https://inspira-ui.com/docs/components/images-slider' },
+    { name: 'Photo Gallery', docs: 'https://inspira-ui.com/docs/components/photo-gallery' },
+    { name: 'Particle Image', docs: 'https://inspira-ui.com/docs/components/particle-image' },
+    { name: 'Scratch To Reveal', docs: 'https://inspira-ui.com/docs/components/scratch-to-reveal' },
+    { name: 'Video Text', docs: 'https://inspira-ui.com/docs/components/video-text' },
+    
+    // 3D & Visual Effects
+    { name: 'Cosmic Portal', docs: 'https://inspira-ui.com/docs/components/cosmic-portal' },
+    { name: 'Globe', docs: 'https://inspira-ui.com/docs/components/globe' },
+    { name: 'GitHub Globe', docs: 'https://inspira-ui.com/docs/components/github-globe' },
+    { name: 'Icon Cloud', docs: 'https://inspira-ui.com/docs/components/icon-cloud' },
+    { name: 'Logo Cloud', docs: 'https://inspira-ui.com/docs/components/logo-cloud' },
+    { name: 'Logo Origami', docs: 'https://inspira-ui.com/docs/components/logo-origami' },
+    { name: 'World Map', docs: 'https://inspira-ui.com/docs/components/world-map' },
+    { name: 'Lamp Effect', docs: 'https://inspira-ui.com/docs/components/lamp-effect' },
+    { name: 'Lens', docs: 'https://inspira-ui.com/docs/components/lens' },
+    { name: 'Light Speed', docs: 'https://inspira-ui.com/docs/components/light-speed' },
+    { name: 'Liquid Glass', docs: 'https://inspira-ui.com/docs/components/liquid-glass' },
+    { name: 'Meteors', docs: 'https://inspira-ui.com/docs/components/meteors' },
+    { name: 'Sparkles', docs: 'https://inspira-ui.com/docs/components/sparkles' },
+    { name: 'Vortex', docs: 'https://inspira-ui.com/docs/components/vortex' },
+    { name: 'Tracing Beam', docs: 'https://inspira-ui.com/docs/components/tracing-beam' },
+    { name: 'Shader Toy', docs: 'https://inspira-ui.com/docs/components/shader-toy' },
+    { name: 'Spline', docs: 'https://inspira-ui.com/docs/components/spline' },
+    
+    // Container & Layout
+    { name: 'Container Scroll', docs: 'https://inspira-ui.com/docs/components/container-scroll' },
+    { name: 'Container Text Flip', docs: 'https://inspira-ui.com/docs/components/container-text-flip' },
+    { name: 'Scroll Island', docs: 'https://inspira-ui.com/docs/components/scroll-island' },
+    
+    // Cursor Effects
+    { name: 'Fluid Cursor', docs: 'https://inspira-ui.com/docs/components/fluid-cursor' },
+    { name: 'Smooth Cursor', docs: 'https://inspira-ui.com/docs/components/smooth-cursor' },
+    { name: 'Sleek Line Cursor', docs: 'https://inspira-ui.com/docs/components/sleek-line-cursor' },
+    { name: 'Tailed Cursor', docs: 'https://inspira-ui.com/docs/components/tailed-cursor' },
+    
+    // Focus & Interaction
+    { name: 'Focus', docs: 'https://inspira-ui.com/docs/components/focus' },
+    { name: 'Link Preview', docs: 'https://inspira-ui.com/docs/components/link-preview' },
+    
+    // Mockups
+    { name: 'iPhone Mockup', docs: 'https://inspira-ui.com/docs/components/iphone-mockup' },
+    { name: 'Safari Mockup', docs: 'https://inspira-ui.com/docs/components/safari-mockup' },
+    
+    // SVG & Masks
+    { name: 'SVG Mask', docs: 'https://inspira-ui.com/docs/components/svg-mask' },
+    
+    // Book Component
+    { name: 'Book', docs: 'https://inspira-ui.com/docs/components/book' },
+    
+    // Animate Grid
+    { name: 'Animate Grid', docs: 'https://inspira-ui.com/docs/components/animate-grid' },
   ])
   
   // Attach async resolvers
