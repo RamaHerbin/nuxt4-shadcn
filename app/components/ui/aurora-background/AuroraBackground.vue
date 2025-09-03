@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="h-full">
     <div
       v-bind="props"
       :class="
