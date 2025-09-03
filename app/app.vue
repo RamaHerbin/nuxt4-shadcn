@@ -16,7 +16,7 @@
       />
     </div>
 
-    <!-- Showcase des composants InspiraUI -->
+    <!-- Inspira UI Components Showcase InspiraUI -->
     <div class="min-h-screen bg-background text-foreground">
       <header class="sticky top-0 z-10 backdrop-blur bg-background/70 border-b">
         <div class="max-w-7xl mx-auto px-4 py-4 flex items-center gap-3">
