@@ -24,9 +24,4 @@
 </template>
 
 <script setup lang="ts">
-import { GradientButton } from '~/components/ui/gradient-button'
-import { RainbowButton } from '~/components/ui/rainbow-button'
-import { ShimmerButton } from '~/components/ui/shimmer-button'
-import { InteractiveHoverButton } from '~/components/ui/interactive-hover-button'
-import { RippleButton } from '~/components/ui/ripple-button'
 </script>

@@ -31,8 +31,4 @@
 </template>
 
 <script setup lang="ts">
-import { TextGenerateEffect } from '~/components/ui/text-generate-effect'
-import { FlipWords } from '~/components/ui/flip-words'
-import { MorphingText } from '~/components/ui/morphing-text'
-import { SparklesText } from '~/components/ui/sparkles-text'
 </script>

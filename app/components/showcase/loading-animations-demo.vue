@@ -28,9 +28,6 @@
 </template>
 
 <script setup lang="ts">
-import { MultiStepLoader } from '~/components/ui/multi-step-loader'
-import { AnimatedCircularProgressBar } from '~/components/ui/animated-circular-progressbar'
-import { NumberTicker } from '~/components/ui/number-ticker'
 
 const isLoading = ref(false)
 

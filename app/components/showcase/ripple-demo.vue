@@ -10,5 +10,4 @@
 </template>
 
 <script setup lang="ts">
-import { RippleButton } from '~/components/ui/ripple-button'
 </script>

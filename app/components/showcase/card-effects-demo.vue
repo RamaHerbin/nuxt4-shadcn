@@ -47,8 +47,4 @@
 </template>
 
 <script setup lang="ts">
-import { CardSpotlight } from '~/components/ui/card-spotlight'
-import { GlareCard } from '~/components/ui/glare-card'
-import { GlowBorder } from '~/components/ui/glow-border'
-import { NeonBorder } from '~/components/ui/neon-border'
 </script>

@@ -13,7 +13,6 @@
 </template>
 
 <script setup lang="ts">
-import { AnimatedList, Notification } from '~/components/ui/animated-list'
 
 const notifications = [
   {

@@ -9,5 +9,4 @@
 </template>
 
 <script setup lang="ts">
-import { Confetti, ConfettiButton } from '~/components/ui/confetti'
 </script>

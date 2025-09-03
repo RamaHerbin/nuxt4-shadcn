@@ -15,7 +15,6 @@
 </template>
 
 <script setup lang="ts">
-import { BentoGrid, BentoGridItem } from '~/components/ui/bento-grid'
 
 const items = [
   {

@@ -23,6 +23,4 @@
 </template>
 
 <script setup lang="ts">
-import { AuroraBackground } from '~/components/ui/aurora-background'
-import { WavyBackground } from '~/components/ui/wavy-background'
 </script>

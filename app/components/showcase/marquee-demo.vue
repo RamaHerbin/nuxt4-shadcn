@@ -13,7 +13,6 @@
 </template>
 
 <script setup lang="ts">
-import { Marquee } from '~/components/ui/marquee'
 
 const items = [
   { id: 1, text: '🚀 Inspira UI' },
