@@ -28,5 +28,4 @@
 </template>
 
 <script setup lang="ts">
-import { Orbit } from '~/components/ui/orbit'
 </script>

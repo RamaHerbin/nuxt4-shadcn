@@ -23,6 +23,4 @@
 </template>
 
 <script setup lang="ts">
-import { Globe } from '~/components/ui/globe'
-import { CosmicPortal } from '~/components/ui/cosmic-portal'
 </script>
