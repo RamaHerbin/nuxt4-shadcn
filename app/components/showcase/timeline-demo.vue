@@ -7,10 +7,10 @@
       </div>
       
       <div class="relative">
-        <!-- Ligne verticale -->
+        <!-- Vertical line -->
         <div class="absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 via-green-500 to-yellow-500"></div>
         
-        <!-- Étape 1 -->
+        <!-- Step 1 -->
         <div class="relative flex items-start space-x-4 pb-6">
           <div class="flex-shrink-0 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white text-sm font-semibold">
             1
@@ -23,7 +23,7 @@
           </div>
         </div>
         
-        <!-- Étape 2 -->
+        <!-- Step 2 -->
         <div class="relative flex items-start space-x-4 pb-6">
           <div class="flex-shrink-0 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white text-sm font-semibold">
             2
@@ -36,7 +36,7 @@
           </div>
         </div>
         
-        <!-- Étape 3 -->
+        <!-- Step 3 -->
         <div class="relative flex items-start space-x-4">
           <div class="flex-shrink-0 w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center text-white text-sm font-semibold">
             3
@@ -54,5 +54,4 @@
 </template>
 
 <script setup lang="ts">
-// Timeline simplifiée sans dépendances externes
 </script>
