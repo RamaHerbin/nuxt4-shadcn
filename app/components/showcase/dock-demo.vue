@@ -41,5 +41,4 @@
 </template>
 
 <script setup lang="ts">
-import { Dock, DockIcon } from '~/components/ui/dock'
 </script>

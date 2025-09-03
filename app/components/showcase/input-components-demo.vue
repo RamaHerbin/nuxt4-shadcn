@@ -35,6 +35,4 @@
 </template>
 
 <script setup lang="ts">
-import { IInput } from '~/components/ui/input'
-import { VanishingInput } from '~/components/ui/vanishing-input'
 </script>

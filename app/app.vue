@@ -269,7 +269,7 @@
 </template>
 
 <script setup lang="ts">
-// Import des composants de démonstration
+// Import 
 import AnimatedListDemo from '~/components/showcase/animated-list-demo.vue'
 import BentoGridDemo from '~/components/showcase/bento-grid-demo.vue'
 import DockDemo from '~/components/showcase/dock-demo.vue'
