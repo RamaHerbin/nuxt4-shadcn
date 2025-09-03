@@ -9,7 +9,7 @@
     
     <div class="text-center">
       <FlipWords 
-        :words="['Créatif', 'Moderne', 'Élégant', 'Fonctionnel']"
+        :words="['Créatif', 'Modern', 'Élégant', 'Usable']"
         class="text-lg"
       />
     </div>
