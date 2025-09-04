@@ -6,7 +6,7 @@
       :shimmer-size="200"
     >
       <span class="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-        Rainbow Shimmer
+        Rainbow
       </span>
     </RainbowButton>
     <RainbowButton
@@ -14,7 +14,7 @@
       class="shadow-2xl"
     >
       <span class="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-        Rainbow Border
+        Rainbow
       </span>
     </RainbowButton>
   </div>

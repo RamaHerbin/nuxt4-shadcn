@@ -1,13 +1,45 @@
 <template>
-  <div class="relative h-96 w-full">
-    <AuroraBackground class="absolute inset-0 flex items-center justify-center rounded-lg" />
-    <div class="relative z-10 flex flex-col items-center justify-center text-center">
-      <h3 class="text-2xl font-bold text-white mb-2">Aurora Background</h3>
-      <p class="text-white/80 text-sm">Beautiful aurora-like gradient background</p>
-    </div>
+  <div class="relative h-96 w-full overflow-hidden rounded-lg">
+    <ClientOnly>
+      <AuroraBackground class="h-full">
+        <Motion
+          as="div"
+          :initial="{ opacity: 0, y: 40, filter: 'blur(10px)' }"
+          :while-in-view="{
+            opacity: 1,
+            y: 0,
+            filter: 'blur(0px)',
+          }"
+          :transition="{
+            delay: 0.3,
+            duration: 0.8,
+            ease: 'easeInOut',
+          }"
+          class="relative flex flex-col items-center justify-center gap-2 px-4"
+        >
+          <div
+            class="text-center text-3xl font-bold md:text-2xl dark:text-white"
+          >
+            Background lights are cool you know.
+          </div>
+          <div
+            class="py-2 text-base font-extralight md:text-1xl dark:text-neutral-200"
+          >
+            And this, is chemical burn.
+          </div>
+          <button
+            class="w-fit rounded-full bg-black px-4 py-2 text-white dark:bg-white dark:text-black"
+          >
+            Burn it now
+          </button>
+        </Motion>
+      </AuroraBackground>
+    </ClientOnly>
   </div>
 </template>
 
 <script setup lang="ts">
-import { AuroraBackground } from '~/components/ui/aurora-background'
+import { Motion } from "motion-v";
+
+import { AuroraBackground } from "~/components/ui/aurora-background";
 </script>
