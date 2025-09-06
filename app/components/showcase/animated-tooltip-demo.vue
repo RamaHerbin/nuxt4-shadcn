@@ -18,6 +18,6 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { AnimatedTooltip } from '~/components/ui/animated-tooltip'
 </script>
