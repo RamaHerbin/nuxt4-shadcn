@@ -2,11 +2,13 @@
   <div class="w-full max-w-sm">
     <AnimatedList :delay="2000">
       <Notification
-        v-for="notification in notifications"
-        :key="notification.id"
-        :title="notification.title"
-        :message="notification.message"
-        :type="notification.type"
+       v-for="(item, idx) in notifications"
+            :key="idx"
+            :name="item.name"
+            :description="item.description"
+            :icon="item.icon"
+            :color="item.color"
+            :time="item.time"
       />
     </AnimatedList>
   </div>
@@ -16,28 +18,39 @@
 
 const notifications = [
   {
-    id: 1,
-    title: 'New message',
-    message: 'You have received a new message',
-    type: 'info'
+    name: "Payment received",
+    description: "Inspira UI",
+    time: "15m ago",
+    icon: "💸",
+    color: "#00C9A7",
   },
   {
-    id: 2,
-    title: 'Update',
-    message: 'Your profile has been updated',
-    type: 'success'
+    name: "User signed up",
+    description: "Inspira UI",
+    time: "10m ago",
+    icon: "👤",
+    color: "#FFB800",
   },
   {
-    id: 3,
-    title: 'Reminder',
-    message: 'Don\'t forget your appointment',
-    type: 'warning'
+    name: "New message",
+    description: "Inspira UI",
+    time: "5m ago",
+    icon: "💬",
+    color: "#FF3D71",
   },
   {
-    id: 4,
-    title: 'Error',
-    message: 'An error has occurred',
-    type: 'error'
-  }
-]
+    name: "New event",
+    description: "Inspira UI",
+    time: "2m ago",
+    icon: "🗞️",
+    color: "#1E86FF",
+  },
+  {
+    name: "Task completed",
+    description: "Inspira UI",
+    time: "1m ago",
+    icon: "✅",
+    color: "#45B26B",
+  },
+];
 </script>
