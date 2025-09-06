@@ -108,32 +108,19 @@ import BentoGridDemo from '~/components/showcase/bento-grid-demo.vue'
 import DockDemo from '~/components/showcase/dock-demo.vue'
 import MarqueeDemo from '~/components/showcase/marquee-demo.vue'
 import TimelineDemo from '~/components/showcase/timeline-demo.vue'
-import OrbitDemo from '~/components/showcase/orbit-demo.vue'
 import ConfettiDemo from '~/components/showcase/confetti-demo.vue'
-import RippleDemo from '~/components/showcase/ripple-demo.vue'
 import TextEffectsDemo from '~/components/showcase/text-effects-demo.vue'
-import BackgroundEffectsDemo from '~/components/showcase/background-effects-demo.vue'
-import CardEffectsDemo from '~/components/showcase/card-effects-demo.vue'
 import TextAnimationsDemo from '~/components/showcase/text-animations-demo.vue'
 import ButtonVariantsDemo from '~/components/showcase/button-variants-demo.vue'
 import InputComponentsDemo from '~/components/showcase/input-components-demo.vue'
 import LoadingAnimationsDemo from '~/components/showcase/loading-animations-demo.vue'
-import Effects3DDemo from '~/components/showcase/3d-effects-demo.vue'
 
 // Import des nouvelles démos
 import BlackHoleBackgroundDemo from '~/components/showcase/black-hole-background-demo.vue'
 import AuroraBackgroundDemo from '~/components/showcase/aurora-background-demo.vue'
-import AnimatedBeamDemo from '~/components/showcase/animated-beam-demo.vue'
-import AnimatedTooltipDemo from '~/components/showcase/animated-tooltip-demo.vue'
-import InteractiveGridPatternDemo from '~/components/showcase/interactive-grid-pattern-demo.vue'
 import TextGenerateEffectDemo from '~/components/showcase/text-generate-effect-demo.vue'
 import FlipWordsDemo from '~/components/showcase/flip-words-demo.vue'
-import GradientButtonDemo from '~/components/showcase/gradient-button-demo.vue'
-import RainbowButtonDemo from '~/components/showcase/rainbow-button-demo.vue'
-import ShimmerButtonDemo from '~/components/showcase/shimmer-button-demo.vue'
-import MeteorsDemo from '~/components/showcase/meteors-demo.vue'
 import SparklesDemo from '~/components/showcase/sparkles-demo.vue'
-import LampEffectDemo from '~/components/showcase/lamp-effect-demo.vue'
 
 
 // État réactif
@@ -159,45 +146,31 @@ const components = [
   // Backgrounds
   { name: 'Black Hole Background', category: 'backgrounds', demo: BlackHoleBackgroundDemo, docs: 'https://inspira-ui.com/docs/components/backgrounds/black-hole-background' },
   { name: 'Aurora Background', category: 'backgrounds', demo: AuroraBackgroundDemo, docs: 'https://inspira-ui.com/docs/components/backgrounds/aurora-background' },
-  // { name: 'Interactive Grid Pattern', category: 'backgrounds', demo: InteractiveGridPatternDemo, docs: 'https://inspira-ui.com/docs/components/backgrounds/interactive-grid-pattern' },
-  // { name: 'Meteors', category: 'backgrounds', demo: MeteorsDemo, docs: 'https://inspira-ui.com/docs/components/backgrounds/meteors' },
-  // { name: 'Sparkles', category: 'backgrounds', demo: SparklesDemo, docs: 'https://inspira-ui.com/docs/components/backgrounds/sparkles' },
-  // { name: 'Lamp Effect', category: 'backgrounds', demo: LampEffectDemo, docs: 'https://inspira-ui.com/docs/components/backgrounds/lamp-effect' },
+  { name: 'Sparkles', category: 'backgrounds', demo: SparklesDemo, docs: 'https://inspira-ui.com/docs/components/backgrounds/sparkles' },
 
   // Animations
   { name: 'Animated List', category: 'animations', demo: AnimatedListDemo, docs: 'https://inspira-ui.com/docs/components/animated-list' },
-  { name: 'Animated Beam', category: 'animations', demo: AnimatedBeamDemo, docs: 'https://inspira-ui.com/docs/components/animated-beam' },
-  // { name: 'Animated Tooltip', category: 'animations', demo: AnimatedTooltipDemo, docs: 'https://inspira-ui.com/docs/components/animated-tooltip' },
-  // { name: 'Orbit', category: 'animations', demo: OrbitDemo, docs: 'https://inspira-ui.com/docs/components/orbit' },
-  // { name: 'Confetti', category: 'animations', demo: ConfettiDemo, docs: 'https://inspira-ui.com/docs/components/confetti' },
+  { name: 'Confetti', category: 'animations', demo: ConfettiDemo, docs: 'https://inspira-ui.com/docs/components/confetti' },
   
   // // Buttons
-  // { name: 'Gradient Button', category: 'buttons', demo: GradientButtonDemo, docs: 'https://inspira-ui.com/docs/components/gradient-button' },
-  // { name: 'Rainbow Button', category: 'buttons', demo: RainbowButtonDemo, docs: 'https://inspira-ui.com/docs/components/rainbow-button' },
-  // { name: 'Shimmer Button', category: 'buttons', demo: ShimmerButtonDemo, docs: 'https://inspira-ui.com/docs/components/shimmer-button' },
-  // { name: 'Ripple Button', category: 'buttons', demo: RippleDemo, docs: 'https://inspira-ui.com/docs/components/ripple-button' },
-  // { name: 'Button Variants', category: 'buttons', demo: ButtonVariantsDemo, docs: 'https://inspira-ui.com/docs/components/button' },
+  { name: 'Button Variants', category: 'buttons', demo: ButtonVariantsDemo, docs: 'https://inspira-ui.com/docs/components/button' },
   
   // // Text Effects
-  // { name: 'Text Generate Effect', category: 'text', demo: TextGenerateEffectDemo, docs: 'https://inspira-ui.com/docs/components/text-generate-effect' },
-  // { name: 'Flip Words', category: 'text', demo: FlipWordsDemo, docs: 'https://inspira-ui.com/docs/components/flip-words' },
-  // { name: 'Text Effects', category: 'text', demo: TextEffectsDemo, docs: 'https://inspira-ui.com/docs/components/text-effects' },
-  // { name: 'Text Animations', category: 'text', demo: TextAnimationsDemo, docs: 'https://inspira-ui.com/docs/components/text-animations' },
+  { name: 'Text Generate Effect', category: 'text', demo: TextGenerateEffectDemo, docs: 'https://inspira-ui.com/docs/components/text-generate-effect' },
+  { name: 'Flip Words', category: 'text', demo: FlipWordsDemo, docs: 'https://inspira-ui.com/docs/components/flip-words' },
+  { name: 'Text Effects', category: 'text', demo: TextEffectsDemo, docs: 'https://inspira-ui.com/docs/components/text-effects' },
+  { name: 'Text Animations', category: 'text', demo: TextAnimationsDemo, docs: 'https://inspira-ui.com/docs/components/text-animations' },
   
   // // Layout
-  // { name: 'Bento Grid', category: 'layout', demo: BentoGridDemo, docs: 'https://inspira-ui.com/docs/components/bento-grid' },
-  // { name: 'Dock', category: 'layout', demo: DockDemo, docs: 'https://inspira-ui.com/docs/components/dock' },
-  // { name: 'Marquee', category: 'layout', demo: MarqueeDemo, docs: 'https://inspira-ui.com/docs/components/marquee' },
-  // { name: 'Timeline', category: 'layout', demo: TimelineDemo, docs: 'https://inspira-ui.com/docs/components/timeline' },
+  { name: 'Bento Grid', category: 'layout', demo: BentoGridDemo, docs: 'https://inspira-ui.com/docs/components/bento-grid' },
+  { name: 'Dock', category: 'layout', demo: DockDemo, docs: 'https://inspira-ui.com/docs/components/dock' },
+  { name: 'Marquee', category: 'layout', demo: MarqueeDemo, docs: 'https://inspira-ui.com/docs/components/marquee' },
+  { name: 'Timeline', category: 'layout', demo: TimelineDemo, docs: 'https://inspira-ui.com/docs/components/timeline' },
   
   // // Interactive
-  // { name: 'Input Components', category: 'interactive', demo: InputComponentsDemo, docs: 'https://inspira-ui.com/docs/components/input' },
-  // { name: 'Loading Animations', category: 'interactive', demo: LoadingAnimationsDemo, docs: 'https://inspira-ui.com/docs/components/loading-animations' },
+  { name: 'Input Components', category: 'interactive', demo: InputComponentsDemo, docs: 'https://inspira-ui.com/docs/components/input' },
+  { name: 'Loading Animations', category: 'interactive', demo: LoadingAnimationsDemo, docs: 'https://inspira-ui.com/docs/components/loading-animations' },
   
-  // // Cards
-  // { name: 'Card Effects', category: 'cards', demo: CardEffectsDemo, docs: 'https://inspira-ui.com/docs/components/card-effects' },
-  // { name: 'Background Effects', category: 'cards', demo: BackgroundEffectsDemo, docs: 'https://inspira-ui.com/docs/components/background-effects' },
-  // { name: '3D Effects', category: 'cards', demo: Effects3DDemo, docs: 'https://inspira-ui.com/docs/components/3d-effects' },
 ]
 
 const filteredComponents = computed(() => {
